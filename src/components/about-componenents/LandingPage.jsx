@@ -2,12 +2,12 @@ import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
-import { config } from "../editable-stuff/config";
-import LandingPage from "./about-componenents/LandingPage";
+import { config } from "../../editable-stuff/config";
+import "./about.css";
 
-const About = () => {
+const LandingPage = () => {
   return (
-    <div id="landingpage">
+    <div id="landingpage" style={{ height: "100vh" }}>
       <Grid container spacing={2} style={{ padding: "2%" }}>
         <Grid item xs={12} md={5}>
           <img
@@ -38,9 +38,7 @@ const About = () => {
           </div>
         </Grid>
       </Grid>
-
-      <LandingPage />
     </div>
   );
 };
-export default About;
+export default LandingPage;

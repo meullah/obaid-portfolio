@@ -6,7 +6,7 @@ import IconButton from "@mui/material/IconButton";
 import InfoIcon from "@mui/icons-material/Info";
 import { makeStyles } from "@mui/styles";
 import Typography from "@mui/material/Typography";
-import itemData from "../itemData";
+import itemData from "../itemData"; // todo: change location
 
 const useStyles = makeStyles({
   root: {
@@ -21,7 +21,10 @@ export default function TitlebarImageList() {
     window.open(imgName.replace(" ", "-"));
   };
   return (
-    <ImageList sx={{ p: 2, flexGrow: 1, display: { xs: "block", sm: "grid" } }}>
+    <ImageList
+      sx={{ p: 2, flexGrow: 1, display: { xs: "block", sm: "grid" } }}
+      cols={3}
+    >
       {itemData.map((item) => (
         <ImageListItem sx={{ overflow: "hidden" }} key={item.img}>
           <img
