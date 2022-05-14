@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function TitlebarImageList() {
+export default function Work() {
   const classes = useStyles();
   const viewDetails = (imgName) => {
     window.open(imgName.replace(" ", "-"));

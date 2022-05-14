@@ -7,7 +7,7 @@ import "./about.css";
 
 const LandingPage = () => {
   return (
-    <div id="landingpage" style={{ height: "100vh" }}>
+    <div id="landingPage" style={{ height: "100vh" }}>
       <Grid container spacing={2} style={{ padding: "2%" }}>
         <Grid item xs={12} md={5}>
           <img
