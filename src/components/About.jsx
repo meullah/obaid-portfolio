@@ -3,7 +3,6 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import { config } from "../editable-stuff/config";
-import LandingPage from "./about-componenents/LandingPage";
 
 const About = () => {
   return (
@@ -38,8 +37,6 @@ const About = () => {
           </div>
         </Grid>
       </Grid>
-
-      <LandingPage />
     </div>
   );
 };
