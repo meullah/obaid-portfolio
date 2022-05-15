@@ -17,7 +17,6 @@ let myTheme = createTheme({
   typography: {
     fontFamily: "'Poppins', sans-serif",
   },
-  
 });
 myTheme = responsiveFontSizes(myTheme);
 
@@ -31,12 +30,6 @@ function App() {
           <Route exact path="/work" element={<Work />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/process" element={<Process />} />
-          <Route
-            exact
-            path="/Breakfast"
-            element={<Details data={itemDetails[0]} />}
-          />
-
           <Route
             exact
             path="/Breakfast"

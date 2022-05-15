@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 export default function Work() {
   const classes = useStyles();
   const viewDetails = (imgName) => {
-    window.open(imgName.replace(" ", "-"));
+    window.open("#/" + imgName.replace(" ", "-"));
   };
   return (
     <ImageList
