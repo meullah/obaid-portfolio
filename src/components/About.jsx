@@ -8,7 +8,7 @@ import LandingPage from "./about-componenents/LandingPage";
 
 import { styled } from "@mui/material/styles";
 
-const Root = styled("div")(({ theme }) => ({
+const Root = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.up("lg")]: {
     height: "100vh",
   },
@@ -16,8 +16,8 @@ const Root = styled("div")(({ theme }) => ({
 
 const About = () => {
   return (
-    <Root>
-      <Grid container spacing={2} style={{ padding: "2%" }}>
+    <div>
+      <Root container spacing={2} style={{ padding: "2%" }}>
         <Grid item xs={12} md={5} sx={{ margin: "auto" }}>
           <img
             style={{
@@ -54,10 +54,10 @@ const About = () => {
             </div>
           </div>
         </Grid>
-      </Grid>
+      </Root>
 
       <LandingPage />
-    </Root>
+    </div>
   );
 };
 export default About;
